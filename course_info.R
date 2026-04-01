@@ -94,13 +94,14 @@ submit <- function(schedule, assignment) {
   due <- format(ass$Due, "%e %B %Y") |> stringr::str_trim()
   url <- ass$Moodle
   button <- paste0(
-    "<br><br><hr><b>Due: ",
-    due,
-    "</b><br>",
-    "<a href=",
-    url,
-    " class = 'badge badge-large badge-blue'>",
-    "<font size='+2'>&nbsp;&nbsp;<b>Join GitHub Classroom</b>&nbsp;&nbsp;</font><br></a>"
+    "<div class='assignment-cta'>",
+    "<div>",
+    "<p class='assignment-cta__label'>Submission</p>",
+    "<p class='assignment-cta__due'>Due ", due, "</p>",
+    "<p class='assignment-cta__text'>Open the Moodle submission page for instructions, links and final upload details.</p>",
+    "</div>",
+    "<a href='", url, "' class='button-link assignment-cta__button'>Open submission page</a>",
+    "</div>"
   )
   cat(button)
 }
@@ -111,14 +112,16 @@ show_slides <- function(week) {
   if (slides_exist) {
     pdf_file <- paste0("https://arp.numbat.space/week", week, "/slides.pdf")
     embed <- paste0(
-      "<iframe src='https://docs.google.com/gview?url=",
+      "<iframe class='slides-frame' src='",
       pdf_file,
-      "&embedded=true' width='100%' height=465></iframe>"
+      "' title='Slides for week ",
+      week,
+      "' loading='lazy'></iframe>"
     )
     button <- paste0(
-      "<a href=",
+      "<div class='resource-actions'><a href='",
       pdf_file,
-      " class='badge badge-small badge-red'>Download pdf</a>"
+      "' class='button-link button-link--ghost'>Download slides PDF</a></div>"
     )
     cat(paste0("## Slides for week\n\n", embed, "\n", button))
   }

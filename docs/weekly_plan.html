@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.31">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>weekly_plan – ETC4500/ETC5450 Advanced R Programming</title>
+<title>weekly_plan – Advanced R Programming</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-61a706f12a4ca3af2f5d6d46d967238d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-551b98dd3f2ddd1ba8b9cf8f73b68a95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-04fc5456c75f7aca45f2adba4192025d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,13 +70,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&amp;family=Merriweather:wght@700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
 
 
+<link rel="stylesheet" href="numbat.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -84,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">ETC4500/ETC5450 Advanced R Programming</span>
+    <span class="navbar-title">Advanced R Programming</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -99,12 +102,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-schedule" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-calendar2-fill" role="img">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-weekly-schedule" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-calendar2-week-fill" role="img">
 </i> 
- <span class="menu-text">Schedule</span>
+ <span class="menu-text">Weekly schedule</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-schedule">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-weekly-schedule">    
         <li>
     <a class="dropdown-item" href="./week1/index.html">
  <span class="dropdown-text">Week 1: R tools and data structures</span></a>
@@ -125,6 +128,59 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./week5/index.html">
  <span class="dropdown-text">Week 5: Debugging</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./week6/index.html">
+ <span class="dropdown-text">Week 6: Functional programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./week7/index.html">
+ <span class="dropdown-text">Week 7: Measuring and improving performance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./week8/index.html">
+ <span class="dropdown-text">Week 8: Object-oriented programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./week9/index.html">
+ <span class="dropdown-text">Week 9: Object-oriented programming (vctrs)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./week10/index.html">
+ <span class="dropdown-text">Week 10: Metaprogramming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./week11/index.html">
+ <span class="dropdown-text">Week 11: Rewriting R code in C++</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./week12/index.html">
+ <span class="dropdown-text">Week 12: Package hackathon</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assessments" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-clipboard-check-fill" role="img">
+</i> 
+ <span class="menu-text">Assessments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assessments">    
+        <li>
+    <a class="dropdown-item" href="./assignments/A1.html">
+ <span class="dropdown-text">Assignment 1 (30%)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignments/A2.html">
+ <span class="dropdown-text">Assignment 2 (30%)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignments/A3.html">
+ <span class="dropdown-text">Assignment 3 (30%)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./assignments/discussion.html">
+ <span class="dropdown-text">Discussion (10%)</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -136,6 +192,11 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="https://learning.monash.edu/course/view.php?id=40292&amp;section=1"> <i class="bi bi-mortarboard-fill" role="img">
 </i> 
 <span class="menu-text">Moodle</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://learning.monash.edu/mod/lti/view.php?id=5219874"> <i class="bi bi-camera-video-fill" role="img">
+</i> 
+<span class="menu-text">Recordings</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -155,15 +216,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#weekly-plan" id="toc-weekly-plan" class="nav-link active" data-scroll-target="#weekly-plan">Weekly plan</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
@@ -278,6 +331,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
