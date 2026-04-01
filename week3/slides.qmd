@@ -186,7 +186,7 @@ use_package_doc()
 #' @aliases fun
 #' @seealso fun
 #' @references Some reference
-#' @author Your name
+#' @author @adhni
 #' @export
 ```
 
@@ -320,7 +320,7 @@ use_package_doc()
 ```yaml
 ---
 title: "Vignette Title"
-author: Your name
+author: @adhni
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Vignette Title}
