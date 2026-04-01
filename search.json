@@ -1,0 +1,597 @@
+[
+  {
+    "objectID": "weekly_plan.html",
+    "href": "weekly_plan.html",
+    "title": "Weekly plan",
+    "section": "",
+    "text": "Weekly plan\n\nWeek 1: Foundations (Rob Hyndman)\nWeek 2: LLM (Hadley Wickham)\nWeek 3: R package development (Rob Hyndman)\nWeek 4: Debugging (Mitchell O’Hara-Wild)\nWeek 5: Functional programming (Mitchell O’Hara-Wild)\nWeek 6: Literate programming: Quarto (Rob Hyndman)\nWeek 7: Reactive programming: targets, renv (Rob Hyndman)\nWeek 8: OO S3 and others (Mitchell O’Hara-Wild)\nWeek 9: OO vctrs (Mitchell O’Hara-Wild)\nWeek 10: Meta programming (Mitchell O’Hara-Wild)\nWeek 11: C++ (Tomasz Wozniak)\nWeek 12: Package hackathon"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ETC4500/5450 Advanced R Programming",
+    "section": "",
+    "text": "R is widely used as a tool for data analysis and one of the most popular programming languages. This unit delves into R from the programming aspect instead of using it as a data analysis tool. You will learn a variety of programming paradigms and delve into the foundations of R as a programming language."
+  },
+  {
+    "objectID": "index.html#this-week",
+    "href": "index.html#this-week",
+    "title": "ETC4500/5450 Advanced R Programming",
+    "section": "This week",
+    "text": "This week\n\n\nThis week\n\nWeek 5 · Debugging\n\n\nPractice debugging workflows in R, including reprexes, traceback, browser, errors, and warnings.\n\n\n\n\nPrepare before class\n\nWatch the debugging videos and skim the online support resources before class.\n\n\n\nWorkshop\n\nThursday 02 April · 9:00am to 11:00am · LTB Room 121\n\n\n\nKey focus\n\n\nCreating good reprexes for debugging\n\n\nUsing traceback, browser, and debug tools\n\n\nDiagnosing errors and warnings\n\n\nWorking through class debugging exercises\n\n\n\n\nAssessment\n\nThis week’s deadline: Assignment 1 was due Tuesday 31 March\n\n\n\n\nComing up next: Week 6 starts 16 Apr: Functional programming\n\n\nOpen week pageSlides PDFAdvanced R debuggingRecordings\n\n\n\n Start here Moodle Lecture material, submissions, announcements, and unit administration.   Watch Recordings Pre-class videos and workshop recordings in one place.   Ask questions Discussion Course discussion, clarifications, and workshop support on Ed.   Plan ahead Weekly schedule Topics, week pages, and upcoming assessment milestones."
+  },
+  {
+    "objectID": "index.html#course-at-a-glance",
+    "href": "index.html#course-at-a-glance",
+    "title": "ETC4500/5450 Advanced R Programming",
+    "section": "Course at a glance",
+    "text": "Course at a glance\n\n\nWorkshop Thursday 9:00am to 11:00am LTB Room 121\n\n\nFormat Pre-class videos + workshop Arrive having watched the material for the week.\n\n\nFocus Programming in R Functional programming, packages, OO systems, metaprogramming, and performance.\n\n\nAssessment 3 assignments + discussion Three major tasks worth 90% plus 10% discussion participation."
+  },
+  {
+    "objectID": "index.html#learning-outcomes",
+    "href": "index.html#learning-outcomes",
+    "title": "ETC4500/5450 Advanced R Programming",
+    "section": "Learning outcomes",
+    "text": "Learning outcomes\n\n\n01\n\nBuild a solid understanding of the foundations of R as a programming language.\n\n\n\n02\n\nWork confidently across multiple paradigms, including functional and object-oriented programming.\n\n\n\n03\n\nUse R’s functional and object-oriented systems to design reusable, well-structured code.\n\n\n\n04\n\nApply metaprogramming ideas to evaluate, generate, and extend code programmatically."
+  },
+  {
+    "objectID": "index.html#teaching-team-and-references",
+    "href": "index.html#teaching-team-and-references",
+    "title": "ETC4500/5450 Advanced R Programming",
+    "section": "Teaching team and references",
+    "text": "Teaching team and references\n\n\nTeaching team\n\nWho is teaching this unit\n\n\n\nRob J Hyndman. Chief Examiner. Email: Rob.Hyndman@monash.edu\n\n\nKrisanat Anukarnsakulchularp, Tutor\n\n\nTomasz Wozniak, Week 11 guest instructor\n\n\n\n\nCore references\n\nReadings worth keeping open\n\n\n\nAdvanced R, 2e by Hadley Wickham\n\n\nAdvanced R Solutions by Malte Grosser, Henning Bumann and Hadley Wickham\n\n\nR packages, 2e by Hadley Wickham and Jenny Bryan"
+  },
+  {
+    "objectID": "index.html#weekly-schedule",
+    "href": "index.html#weekly-schedule",
+    "title": "ETC4500/5450 Advanced R Programming",
+    "section": "Weekly schedule",
+    "text": "Weekly schedule\nEach week combines pre-class material with a live workshop. Use the week pages for readings, activities, slides, and assignment reminders.\n\n\n\nWeek\nDate\nTopic\nAssessments\n\n\n\n\nWeek 1\n05 Mar\nR tools and data structures\n—\n\n\nWeek 2\n12 Mar\nFoundations of R programming\n—\n\n\nWeek 3\n19 Mar\nR package development\n—\n\n\nWeek 4\n26 Mar\nR programming with LLMs\n—\n\n\nWeek 5\n02 Apr\nDebugging\nAssignment 1\n\n\nBreak\n09 Apr\nMid-semester break\n—\n\n\nWeek 6\n16 Apr\nFunctional programming\n—\n\n\nWeek 7\n23 Apr\nMeasuring and improving performance\n—\n\n\nWeek 8\n30 Apr\nObject-oriented programming with S3\n—\n\n\nWeek 9\n07 May\nObject-oriented programming with vctrs\nAssignment 2\n\n\nWeek 10\n14 May\nMetaprogramming\n—\n\n\nWeek 11\n21 May\nRewriting R code in C++\n—\n\n\nWeek 12\n28 May\nPackage hackathon\n—\n\n\nBreak\n04 Jun\nMid-semester break\nAssignment 3"
+  },
+  {
+    "objectID": "index.html#assessment-overview",
+    "href": "index.html#assessment-overview",
+    "title": "ETC4500/5450 Advanced R Programming",
+    "section": "Assessment overview",
+    "text": "Assessment overview\n\n Assessment 1 Assignment 1 30% · Group package project   Assessment 2 Assignment 2 30% · Debugging and code-quality task   Assessment 3 Assignment 3 30% · Extension project with advanced features   Engagement Discussion 10% · Contribution through class discussion"
+  },
+  {
+    "objectID": "assignments/A3.html",
+    "href": "assignments/A3.html",
+    "title": "Assignment 3 (30%)",
+    "section": "",
+    "text": "You need to extend the ??? package to include:\n\nS3 methods (e.g., print and plot methods) for an appropriate class in the package.\nA custom vctrs class for an appropriate data structure in the package.\n\nCreate and document a function for creating your vector.\nDefine appropriate methods for using your vector, including format(), vec_ptype2(), and vec_cast().\nCreate generic function(s) for identifying/extracting useful things from your vector\nCreate methods for your custom generic function(s), including suitable defaults.\n\nIntegration of C++ code via Rcpp for an appropriate function in your package.\n\nYou can also consider adding some element of metaprogramming if you think it is appropriate.\nThere should be at least two vignettes: one describing how to use the package; and one explaining the design choices you have made such as function names, arguments, user workflow, use of internal modular functions, use of non-standard evaluation if appropriate, etc.\nMarks will be awarded for clean and efficient code, and for good design.\n\nNotes\n\nThe package will be developed on GitHub Classroom. Each team will be given a private repository for the assignment. The state of the repository at the time of the deadline will be counted as your submission. Commits after the deadline will be ignored.\nEach team member must contribute at least four substantive commits across multiple days. If the team mark is x, but a team member has not contributed adequately, that team member will receive a mark of 0 (for 0 commits), 0.25x (for 1 commit), 0.5x (for 2 commits), 0.75x (for 3 commits). A maximum of 3 commits on any day will count in this calculation.\nGenerative AI tools may be used in guided ways in this assessment, but you must explain how it was used, including prompts where relevant. Each assignment must include an AI statement. Evidence of AI use that is not mentioned in the statement will result in penalties being applied. Any work submitted for a mark must:\n\nrepresent a sincere demonstration of your human efforts, skills and subject knowledge that you will be accountable for;\nadhere to the guidelines for AI use set for the assessment task;\nreflect the University’s commitment to academic integrity and ethical behaviour.\n\nInappropriate AI use and/or AI use without acknowledgement will be considered a breach of academic integrity. See Learn HQ for more information.\n\n\n\nDue: 2 June 2026  Join GitHub Classroom"
+  },
+  {
+    "objectID": "assignments/A1.html",
+    "href": "assignments/A1.html",
+    "title": "Assignment 1 (30%)",
+    "section": "",
+    "text": "This is a group assignment. You will be assigned to a group of 3 students. You must work together to complete the assignment, and submit a single solution for the group."
+  },
+  {
+    "objectID": "assignments/A1.html#task",
+    "href": "assignments/A1.html#task",
+    "title": "Assignment 1 (30%)",
+    "section": "Task",
+    "text": "Task\nWrite a package to play Rock, Paper, Scissors against the user. Your package should allow the user to:\n\nPlay several rounds of Rock, Paper, Scissors against the computer using a function play_rps(). The function should take the user’s sequence of choices as the first argument (e.g., c(\"rock\", \"scissors\", \"rock\", \"paper\")), and return the results of the games (a vector of \"win\", \"lose\", or \"draw\" values of the same length as the first argument).\nChoose to play against different computer strategies (e.g., random choice, always choose rock, last user choice, etc.) using an optional second argument. The default strategy should be random choice. At least one strategy should depend on the user’s previous choices.\n\nThere is no need for a graphical user interface; a console-based interaction is sufficient. The only user-facing function should be play_rps(). All other functions should be internal to the package, and not exported.\nYou may use usethis functions (e.g., create_package(), use_testthat(), etc.) to help set up your package structure.\nYour code should demonstrate:\n\nDefault argument handling\nInput validation\nUse of appropriate data structures\nEfficient vectorized operations where possible\nModular code design\nDocumentation using roxygen2 with examples\nUnit tests using testthat\nYour package should ensure that unit tests behave deterministically by setting seeds appropriately when testing random strategies. Do not set seeds in the main package code.\nA README file that explains how to install and use the package\nThere is no need to include a vignette."
+  },
+  {
+    "objectID": "assignments/A1.html#notes",
+    "href": "assignments/A1.html#notes",
+    "title": "Assignment 1 (30%)",
+    "section": "Notes",
+    "text": "Notes\n\nThe package will be developed on GitHub Classroom. Each team will be given a private repository for the assignment. The state of the repository at the time of the deadline will be counted as your submission. Commits after the deadline will be ignored.\nMarks will be allocated for regular commits throughout the assignment period. Commits should have meaningful messages that reflect the changes made. Do not combine multiple changes into a single commit. Marks will be deducted for poor commit practices (e.g., large infrequent commits with vague messages).\nEach team member must contribute at least four substantive commits across multiple days. A substantive commit is one that adds or modifies meaningful code, documentation, or tests. Minor commits (e.g., fixing typos, formatting) will not count towards this requirement. If the team mark is x, but a team member has not contributed adequately, that team member will receive a mark of 0 (for 0 commits), 0.25x (for 1 commit), 0.5x (for 2 commits), 0.75x (for 3 commits). A maximum of 3 commits on any day will count in this calculation.\nGenerative AI tools may be used in guided ways in this assessment, but you must explain how it was used, including prompts where relevant. Each assignment must include an AI statement. Evidence of AI use that is not mentioned in the statement will result in penalties being applied. Any work submitted for a mark must:\n\nrepresent a sincere demonstration of your human efforts, skills and subject knowledge that you will be accountable for;\nadhere to the guidelines for AI use set for the assessment task;\nreflect the University’s commitment to academic integrity and ethical behaviour.\n\nInappropriate AI use and/or AI use without acknowledgement will be considered a breach of academic integrity. See Learn HQ for more information."
+  },
+  {
+    "objectID": "assignments/A1.html#marking-rubric",
+    "href": "assignments/A1.html#marking-rubric",
+    "title": "Assignment 1 (30%)",
+    "section": "Marking rubric",
+    "text": "Marking rubric\nTotal: 100 marks (scaled to 30%)\n\n1. Does your play_rps() function work correctly? (20 marks)\n\nproduces correct win/lose/draw results\nhandles multiple rounds\nsupports all strategies (including random, and one that uses previous user choices)\nbehaves correctly in edge cases and invalid inputs\n\n\n\n2. Is your code clean, modular, and efficient? (20 marks)\n\ngood use of helper functions\nclear organisation\nvectorised operations where sensible\nappropriate data structures\nno seed-setting in the main code\n\n\n\n3. Is your documentation helpful? (15 marks)\n\nclear documentation for play_rps() with examples\ngood README explaining installation and usage\nexamples that run successfully\n\n\n\n4. Do you have good unit tests? (15 marks)\n\ntests that cover the main logic\ntests for strategies and edge cases\ntests using seeds so results are reproducible\n\n\n\n5. Does your package build cleanly? (10 marks)\n\nwhether the package installs\nwhether it passes R CMD check without warnings or errors\nwhether the structure follows normal R package conventions\n\n\n\n6. Did the group use GitHub properly? (10 marks)\n\nregular, meaningful commits\ngood commit messages\nevidence that all members participated\n\n\n\n7. Did you include a proper AI use statement? (5 marks)\n\nexplain how you used AI (if at all)\ninclude prompts/examples\nensure all AI‑generated content is acknowledged\n\n\n\nDue: 31 March 2026  Join GitHub Classroom"
+  },
+  {
+    "objectID": "assignments/A2.html",
+    "href": "assignments/A2.html",
+    "title": "Assignment 2 (30%)",
+    "section": "",
+    "text": "The ?? package is designed to ??\nIn this assignment, you will act as a maintainer of the package, fixing problems that have been reported by users.\nYou will be given a GitHub repository containing the package, and the problems that have been reported are provided as issues. For each issue:\n\nCreate a reprex that demonstrates the problem as a comment in the issue.\nFix the problem in the package code.\nAdd a comment to the issue explaining the bug and the fix, including a link to the commit containing the fix.\nAdd unit test(s) to the package that confirms the problem is fixed.\nClose the issue.\n\nThe bug report may not fully describe the extent of the problem, and it may not really be a bug in the package. So you will need to understand what the functions are supposed to do, and then think about why the user has reported the problem. If you believe the problem isn’t a bug, you should instead explain the intended behaviour and update the documentation to better explain what the function does.\nIn some cases, the problem reported may highlight a weakness in the package beyond the immediate issue. In these cases, you should also address the underlying weakness, and explain what you have done in the issue.\n\nNotes\n\nThe package will be developed on GitHub Classroom. Each person will be given a private repository for the assignment. The state of the repository at the time of the deadline will be counted as your submission. Commits after the deadline will be ignored.\nNo commit should address more than one bug. Each bug may be addressed in multiple commits. The GitHub issue should be used to link the commits that address the bug, and to explain the bug and the fix.\nGenerative AI tools may be used in guided ways in this assessment, but you must explain how it was used, including prompts where relevant. Each assignment must include an AI statement. Evidence of AI use that is not mentioned in the statement will result in penalties being applied. Any work submitted for a mark must:\n\nrepresent a sincere demonstration of your human efforts, skills and subject knowledge that you will be accountable for;\nadhere to the guidelines for AI use set for the assessment task;\nreflect the University’s commitment to academic integrity and ethical behaviour.\n\nInappropriate AI use and/or AI use without acknowledgement will be considered a breach of academic integrity. See Learn HQ for more information.\n\n\n\nDue: 5 May 2026  Join GitHub Classroom"
+  },
+  {
+    "objectID": "assignments/discussion.html",
+    "href": "assignments/discussion.html",
+    "title": "Discussion (10%)",
+    "section": "",
+    "text": "All students are expected to participate in class discussion, and in the online discussion forum.\nParticipation may include:\n\nAsking questions during class\nAnswering questions during class\nPosting questions on the discussion forum\nAnswering questions on the discussion forum\n\nParticipation will be monitored throughout the semester, and marks awarded at the end of semester based on the quality and quantity of contributions."
+  },
+  {
+    "objectID": "week1/index.html",
+    "href": "week1/index.html",
+    "title": "Week 1: R tools and data structures",
+    "section": "",
+    "text": "Week 1\n\nGet your tooling in place and build a foundation in R data structures and everyday workflow.\n\n\n\n\nPrepare before class\n\nInstall Positron, take the quick tour, and watch the intro videos before the workshop.\n\n\n\nWorkshop\n\nThursday 05 March · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nWhat makes R different from other programming languages\n\n\nDifferences between RStudio and Positron\n\n\nGitHub, AI tools, and package sources in modern R workflows\n\n\nScalars, vectors, lists, and data frames\n\n\n\n\nAssessment\n\nNo assessment deadline falls inside this teaching week.\n\n\n\n\nSlides PDFAdvanced R foundationsRecordings"
+  },
+  {
+    "objectID": "week1/index.html#main-reference",
+    "href": "week1/index.html#main-reference",
+    "title": "Week 1: R tools and data structures",
+    "section": "Main reference",
+    "text": "Main reference\n\n1-3, Advanced R"
+  },
+  {
+    "objectID": "week1/index.html#what-you-will-learn-this-week",
+    "href": "week1/index.html#what-you-will-learn-this-week",
+    "title": "Week 1: R tools and data structures",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week\n\nWhat makes R different from other programming languages\nDifferences between RStudio and Positron\nIntegration of GitHub and version control in R IDEs\nIntegration of AI tools in R IDEs\nSources of R packages: CRAN, Bioconductor, GitHub\nScalars and vectors\nLists and data frames"
+  },
+  {
+    "objectID": "week1/index.html#pre-class-activities",
+    "href": "week1/index.html#pre-class-activities",
+    "title": "Week 1: R tools and data structures",
+    "section": "Pre-class activities",
+    "text": "Pre-class activities\n\nInstall Positron\nWork through the quick tour\nWatch “From RStudio to Positron”: video\nWatch “Exploratory data analysis with R in Positron”: video"
+  },
+  {
+    "objectID": "week1/index.html#slides-for-week",
+    "href": "week1/index.html#slides-for-week",
+    "title": "Week 1: R tools and data structures",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF\n\nSolutions to class exercises"
+  },
+  {
+    "objectID": "week1/index.html#assignments",
+    "href": "week1/index.html#assignments",
+    "title": "Week 1: R tools and data structures",
+    "section": "Assignments",
+    "text": "Assignments\n\nAssignment 1 is due on Tuesday 31 March."
+  },
+  {
+    "objectID": "week10/index.html",
+    "href": "week10/index.html",
+    "title": "Week 10: Metaprogramming",
+    "section": "",
+    "text": "Week 10\n\nWork with non-standard evaluation, abstract syntax trees, tidyselect, and code generation safely.\n\n\n\n\nPrepare before class\n\nRead the metaprogramming chapters in Advanced R before the workshop.\n\n\n\nWorkshop\n\nThursday 14 May · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nNon-standard evaluation\n\n\nAbstract syntax trees and expressions\n\n\nSymbols, calls, and quosures\n\n\nParsing, evaluation, and code safety\n\n\n\n\nAssessment\n\nNo assessment deadline falls inside this teaching week.\n\n\n\n\nSlides PDFAdvanced R metaprogrammingRecordings"
+  },
+  {
+    "objectID": "week10/index.html#main-reference",
+    "href": "week10/index.html#main-reference",
+    "title": "Week 10: Metaprogramming",
+    "section": "Main reference",
+    "text": "Main reference\n\n17-20 Advanced R"
+  },
+  {
+    "objectID": "week10/index.html#what-you-will-learn-this-week",
+    "href": "week10/index.html#what-you-will-learn-this-week",
+    "title": "Week 10: Metaprogramming",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week\n\nDesign\nNon-standard evaluation (changing the expression or environment)\nAbstract syntax trees\ntidyselect\nSymbols, expressions, quosures (names, calls, calls+environments)\nParsing and evaluating code\nCode safety from injection attacks"
+  },
+  {
+    "objectID": "week10/index.html#slides-for-week",
+    "href": "week10/index.html#slides-for-week",
+    "title": "Week 10: Metaprogramming",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF"
+  },
+  {
+    "objectID": "week11/index.html",
+    "href": "week11/index.html",
+    "title": "Week 11: Rewriting R code in C++",
+    "section": "",
+    "text": "Guest Lecturer: Tomasz Wozniak"
+  },
+  {
+    "objectID": "week11/index.html#main-reference",
+    "href": "week11/index.html#main-reference",
+    "title": "Week 11: Rewriting R code in C++",
+    "section": "Main reference",
+    "text": "Main reference\n\n25. Advanced R"
+  },
+  {
+    "objectID": "week11/index.html#what-you-will-learn-this-week",
+    "href": "week11/index.html#what-you-will-learn-this-week",
+    "title": "Week 11: Rewriting R code in C++",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week\n\nC++ for applications in R with Tomasz Woźniak\nThe first steps with Rcpp\nSome stats with RcppArmadillo\nHands-on coding with four exercises\nAn R package with compiled code"
+  },
+  {
+    "objectID": "week11/index.html#preparation-to-the-session",
+    "href": "week11/index.html#preparation-to-the-session",
+    "title": "Week 11: Rewriting R code in C++",
+    "section": "Preparation to the session",
+    "text": "Preparation to the session\nYou must have a cpp compiler installed on your computer. Follow the instructions from Section 1.3. by Eddelbuettel & François (2023). In short:\n\nWindows: install RTools\nmacOS: install Xcode Command Line Tools\nLinux: install the standard development packages"
+  },
+  {
+    "objectID": "week11/index.html#other-references-used-during-the-session",
+    "href": "week11/index.html#other-references-used-during-the-session",
+    "title": "Week 11: Rewriting R code in C++",
+    "section": "Other references used during the session",
+    "text": "Other references used during the session\n\nArmadillo library documentation\nTsuda, M., Rcpp for everyone"
+  },
+  {
+    "objectID": "week11/index.html#scripts-used-during-the-session",
+    "href": "week11/index.html#scripts-used-during-the-session",
+    "title": "Week 11: Rewriting R code in C++",
+    "section": "Scripts used during the session",
+    "text": "Scripts used during the session\n\nSimple list creation nicetry.cpp\nSimple linear regression example nicelr.cpp\nSimple loop application nicelist.cpp\nSampling from inverted gamma 2 distribution nicerig2.cpp\nStep-by-step package creation nicepackage.R"
+  },
+  {
+    "objectID": "week11/index.html#slides-for-week",
+    "href": "week11/index.html#slides-for-week",
+    "title": "Week 11: Rewriting R code in C++",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF"
+  },
+  {
+    "objectID": "week12/index.html",
+    "href": "week12/index.html",
+    "title": "Week 12: Package hackathon",
+    "section": "",
+    "text": "Week 12\n\nUse the hackathon week to finish, polish, and troubleshoot your final package work in teams.\n\n\n\n\nPrepare before class\n\nBring your package backlog, open issues, and final integration tasks to the workshop.\n\n\n\nWorkshop\n\nThursday 28 May · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nFinish and polish the final package\n\n\nWork in teams with feedback available in the room\n\n\nResolve blockers before final submission\n\n\nUse the session as dedicated integration time\n\n\n\n\nAssessment\n\nNo assessment deadline falls inside this teaching week.\n\n\n\n\nSlides PDFAssignment 3Recordings\n\n\nThis will be a time to work together on your final packages in groups. Rob and Krisanat will be available for consultation."
+  },
+  {
+    "objectID": "week2/index.html",
+    "href": "week2/index.html",
+    "title": "Week 2: Foundations of R Programming",
+    "section": "",
+    "text": "Week 2\n\nWork through subsetting, control flow, functions, environments, and conditions in base R.\n\n\n\n\nPrepare before class\n\nWatch the subsetting videos and finish the linear() warm-up exercise before class.\n\n\n\nWorkshop\n\nThursday 12 March · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nSubsetting vectors, lists, and matrices\n\n\nControl flow and function writing\n\n\nEnvironments and conditions\n\n\nWriting functions with sensible defaults and errors\n\n\n\n\nAssessment\n\nNo assessment deadline falls inside this teaching week.\n\n\n\n\nSlides PDFAdvanced R foundationsRecordings"
+  },
+  {
+    "objectID": "week2/index.html#main-reference",
+    "href": "week2/index.html#main-reference",
+    "title": "Week 2: Foundations of R Programming",
+    "section": "Main reference",
+    "text": "Main reference\n\n4-8, Advanced R"
+  },
+  {
+    "objectID": "week2/index.html#what-you-will-learn-this-week",
+    "href": "week2/index.html#what-you-will-learn-this-week",
+    "title": "Week 2: Foundations of R Programming",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week\n\nSubsetting\nControl flow\nFunctions\nEnvironments\nConditions"
+  },
+  {
+    "objectID": "week2/index.html#pre-class-activities",
+    "href": "week2/index.html#pre-class-activities",
+    "title": "Week 2: Foundations of R Programming",
+    "section": "Pre-class activities",
+    "text": "Pre-class activities\n\nWatch the following series of short videos on subsetting in R:\n\nSubsetting R objects: Basics\nSubsetting R objects: Lists\nSubsetting R objects: Matrices\nSubsetting R objects: Partial matching\nSubsetting R objects: Removing missing values\n\nWrite a function linear, that takes arguments x, a and b, and returns a + b * x. Give default values a=0 and b=1, and make sure your function has sensible error messages when the inputs are not as expected. Your function should work when x is a numerical scalar, vector, or matrix."
+  },
+  {
+    "objectID": "week2/index.html#slides-for-week",
+    "href": "week2/index.html#slides-for-week",
+    "title": "Week 2: Foundations of R Programming",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF\n\nSolutions to class exercises"
+  },
+  {
+    "objectID": "week2/index.html#assignments",
+    "href": "week2/index.html#assignments",
+    "title": "Week 2: Foundations of R Programming",
+    "section": "Assignments",
+    "text": "Assignments\n\nAssignment 1 is due on Tuesday 31 March."
+  },
+  {
+    "objectID": "week3/index.html",
+    "href": "week3/index.html",
+    "title": "Week 3: R package development",
+    "section": "",
+    "text": "Week 3\n\nLearn the package-development workflow: metadata, documentation, checks, tests, and CI.\n\n\n\n\nPrepare before class\n\nWatch the package-building video and come ready to work inside an R package project.\n\n\n\nWorkshop\n\nThursday 19 March · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nPackage metadata and structure\n\n\nDocumentation and testing\n\n\nPackage checks and websites\n\n\nContinuous integration with GitHub Actions\n\n\n\n\nAssessment\n\nNo assessment deadline falls inside this teaching week.\n\n\n\n\nSlides PDFR PackagesRecordings"
+  },
+  {
+    "objectID": "week3/index.html#main-reference",
+    "href": "week3/index.html#main-reference",
+    "title": "Week 3: R package development",
+    "section": "Main reference",
+    "text": "Main reference\n\nR Packages (2e)"
+  },
+  {
+    "objectID": "week3/index.html#what-you-will-learn-this-week",
+    "href": "week3/index.html#what-you-will-learn-this-week",
+    "title": "Week 3: R package development",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week\n\nPackage metadata\nPackage documentation\nPackage checks and tests\nPackage website\nContinuous integration via GitHub Actions"
+  },
+  {
+    "objectID": "week3/index.html#pre-class-activities",
+    "href": "week3/index.html#pre-class-activities",
+    "title": "Week 3: R package development",
+    "section": "Pre-class activities",
+    "text": "Pre-class activities\n\nWatch Building R packages with devtools and usethis"
+  },
+  {
+    "objectID": "week3/index.html#slides-for-week",
+    "href": "week3/index.html#slides-for-week",
+    "title": "Week 3: R package development",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF"
+  },
+  {
+    "objectID": "week3/index.html#assignments",
+    "href": "week3/index.html#assignments",
+    "title": "Week 3: R package development",
+    "section": "Assignments",
+    "text": "Assignments\n\nAssignment 1 is due on Tuesday 31 March."
+  },
+  {
+    "objectID": "week4/index.html",
+    "href": "week4/index.html",
+    "title": "Week 4: R programming with LLMs",
+    "section": "",
+    "text": "Week 4\n\nUse LLM tooling productively for R programming inside Positron and with the ellmer package.\n\n\n\n\nPrepare before class\n\nReview the Positron AI videos and the ellmer documentation before the session.\n\n\n\nWorkshop\n\nThursday 26 March · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nUsing LLMs to assist with R programming\n\n\nSetting up AI features in Positron\n\n\nWorking with ellmer in R\n\n\nReviewing and refining AI-generated code\n\n\n\n\nAssessment\n\nNo assessment deadline falls inside this teaching week.\n\n\n\n\nSlides PDFellmer documentationRecordings"
+  },
+  {
+    "objectID": "week4/index.html#what-you-will-learn-this-week",
+    "href": "week4/index.html#what-you-will-learn-this-week",
+    "title": "Week 4: R programming with LLMs",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week\n\nUsing LLMs to assist with R programming"
+  },
+  {
+    "objectID": "week4/index.html#pre-class-activities",
+    "href": "week4/index.html#pre-class-activities",
+    "title": "Week 4: R programming with LLMs",
+    "section": "Pre-class activities",
+    "text": "Pre-class activities\n\nAI-powered data science using Positron Assistant\nHow to set up and use AI features in Positron\nThe ellmer R package\nHadley Wickham on ellmer"
+  },
+  {
+    "objectID": "week4/index.html#slides-for-week",
+    "href": "week4/index.html#slides-for-week",
+    "title": "Week 4: R programming with LLMs",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF\n\n\nCode used in class\n\n01_code_completion.R\n02_ask.R\n03_edit.R\n04_agent.R\n05_plan.R\n06_git.R\nellmer1.R\nellmer2.R\nfizzbuzz.R\nwrangle.R"
+  },
+  {
+    "objectID": "week4/index.html#assignments",
+    "href": "week4/index.html#assignments",
+    "title": "Week 4: R programming with LLMs",
+    "section": "Assignments",
+    "text": "Assignments\n\nAssignment 1 is due on Tuesday 31 March."
+  },
+  {
+    "objectID": "week5/index.html",
+    "href": "week5/index.html",
+    "title": "Week 5: Debugging",
+    "section": "",
+    "text": "Week 5\n\nPractice debugging workflows in R, including reprexes, traceback, browser, errors, and warnings.\n\n\n\n\nPrepare before class\n\nWatch the debugging videos and skim the online support resources before class.\n\n\n\nWorkshop\n\nThursday 02 April · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nCreating good reprexes for debugging\n\n\nUsing traceback, browser, and debug tools\n\n\nDiagnosing errors and warnings\n\n\nWorking through class debugging exercises\n\n\n\n\nAssessment\n\nAssignment 1 is due Tuesday 31 March\n\n\n\n\nSlides PDFAdvanced R debuggingRecordings"
+  },
+  {
+    "objectID": "week5/index.html#main-reference",
+    "href": "week5/index.html#main-reference",
+    "title": "Week 5: Debugging",
+    "section": "Main reference",
+    "text": "Main reference\n\n22 Advanced R"
+  },
+  {
+    "objectID": "week5/index.html#what-you-will-learn-this-week",
+    "href": "week5/index.html#what-you-will-learn-this-week",
+    "title": "Week 5: Debugging",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week\n\nDebugging"
+  },
+  {
+    "objectID": "week5/index.html#online-resources",
+    "href": "week5/index.html#online-resources",
+    "title": "Week 5: Debugging",
+    "section": "Online resources",
+    "text": "Online resources\n\nCreating a reprex\nPosit Community\nStack Overflow"
+  },
+  {
+    "objectID": "week5/index.html#pre-class-activities",
+    "href": "week5/index.html#pre-class-activities",
+    "title": "Week 5: Debugging",
+    "section": "Pre-class activities",
+    "text": "Pre-class activities\n\nWatch Object of type ‘closure’ is not subsettable with Jenny Bryan\nWatch Debugging in R with Jon Harmon"
+  },
+  {
+    "objectID": "week5/index.html#slides-for-week",
+    "href": "week5/index.html#slides-for-week",
+    "title": "Week 5: Debugging",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF\n\n\nSurvey data\nExercise: MRE\nExercise: traceback\nExercise: browser\nExercise: debug\nExercise: errors\nExercise: warnings\nExercise: debug"
+  },
+  {
+    "objectID": "week5/index.html#assignments",
+    "href": "week5/index.html#assignments",
+    "title": "Week 5: Debugging",
+    "section": "Assignments",
+    "text": "Assignments\n\nAssignment 1 is due on Tuesday 31 March."
+  },
+  {
+    "objectID": "week6/index.html",
+    "href": "week6/index.html",
+    "title": "Week 6: Functional programming",
+    "section": "",
+    "text": "Week 6\n\nUse functional programming patterns, function arguments, and function factories to write cleaner code.\n\n\n\n\nPrepare before class\n\nRead the functional programming chapter and arrive ready to discuss reusable function design.\n\n\n\nWorkshop\n\nThursday 16 April · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nFunctions as values\n\n\nFunction arguments and closures\n\n\nFunction factories\n\n\nWriting reusable, composable code\n\n\n\n\nAssessment\n\nNo assessment deadline falls inside this teaching week.\n\n\n\n\nSlides PDFAdvanced R functional programmingRecordings"
+  },
+  {
+    "objectID": "week6/index.html#main-reference",
+    "href": "week6/index.html#main-reference",
+    "title": "Week 6: Functional programming",
+    "section": "Main reference",
+    "text": "Main reference\n\n9-11. Advanced R"
+  },
+  {
+    "objectID": "week6/index.html#what-you-will-learn-this-week",
+    "href": "week6/index.html#what-you-will-learn-this-week",
+    "title": "Week 6: Functional programming",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week\n\nFunctions\nFunction arguments\nFunction factories"
+  },
+  {
+    "objectID": "week6/index.html#slides-for-week",
+    "href": "week6/index.html#slides-for-week",
+    "title": "Week 6: Functional programming",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF"
+  },
+  {
+    "objectID": "week6/index.html#assignments",
+    "href": "week6/index.html#assignments",
+    "title": "Week 6: Functional programming",
+    "section": "Assignments",
+    "text": "Assignments\n\nAssignment 2 is due on Tuesday 05 May."
+  },
+  {
+    "objectID": "week7/index.html",
+    "href": "week7/index.html",
+    "title": "Week 7: Measuring and improving performance",
+    "section": "",
+    "text": "Week 7\n\nMeasure performance, profile bottlenecks, and improve the speed of R code where it matters.\n\n\n\n\nPrepare before class\n\nRead the Efficient R material and come with questions about profiling and optimisation.\n\n\n\nWorkshop\n\nThursday 23 April · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nMeasuring performance\n\n\nIdentifying bottlenecks\n\n\nImproving runtime where it matters\n\n\nUsing Efficient R as a practical guide\n\n\n\n\nAssessment\n\nNo assessment deadline falls inside this teaching week.\n\n\n\n\nSlides PDFEfficient RRecordings"
+  },
+  {
+    "objectID": "week7/index.html#what-you-will-learn-this-week",
+    "href": "week7/index.html#what-you-will-learn-this-week",
+    "title": "Week 7: Measuring and improving performance",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week\n\nEfficient R Programming"
+  },
+  {
+    "objectID": "week7/index.html#slides-for-week",
+    "href": "week7/index.html#slides-for-week",
+    "title": "Week 7: Measuring and improving performance",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF"
+  },
+  {
+    "objectID": "week7/index.html#assignments",
+    "href": "week7/index.html#assignments",
+    "title": "Week 7: Measuring and improving performance",
+    "section": "Assignments",
+    "text": "Assignments\n\nAssignment 2 is due on Tuesday 05 May."
+  },
+  {
+    "objectID": "week8/index.html",
+    "href": "week8/index.html",
+    "title": "Week 8: Object-oriented programming",
+    "section": "",
+    "text": "Week 8\n\nLearn object-oriented programming concepts in R with a focus on S3 design and methods.\n\n\n\n\nPrepare before class\n\nRead the S3 chapter and skim the comparison resources if you need a broader OO refresher.\n\n\n\nWorkshop\n\nThursday 30 April · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nS3 classes and methods\n\n\nObject-oriented programming concepts in R\n\n\nHow S3 compares with other OO systems\n\n\nUseful references for S4, R6, and S7\n\n\n\n\nAssessment\n\nNo assessment deadline falls inside this teaching week.\n\n\n\n\nSlides PDFAdvanced R S3Recordings"
+  },
+  {
+    "objectID": "week8/index.html#main-reference",
+    "href": "week8/index.html#main-reference",
+    "title": "Week 8: Object-oriented programming",
+    "section": "Main reference",
+    "text": "Main reference\n\n13 Advanced R"
+  },
+  {
+    "objectID": "week8/index.html#what-you-will-learn-this-week",
+    "href": "week8/index.html#what-you-will-learn-this-week",
+    "title": "Week 8: Object-oriented programming",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week\nOverview of object-oriented programming in R, focusing on S3."
+  },
+  {
+    "objectID": "week8/index.html#slides-for-week",
+    "href": "week8/index.html#slides-for-week",
+    "title": "Week 8: Object-oriented programming",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF"
+  },
+  {
+    "objectID": "week8/index.html#assignments",
+    "href": "week8/index.html#assignments",
+    "title": "Week 8: Object-oriented programming",
+    "section": "Assignments",
+    "text": "Assignments\n\nAssignment 2 is due on Tuesday 05 May."
+  },
+  {
+    "objectID": "week8/index.html#online-resources",
+    "href": "week8/index.html#online-resources",
+    "title": "Week 8: Object-oriented programming",
+    "section": "Online resources",
+    "text": "Online resources\n\nA simple guide to S3 methods\nS4: a short guide for the perplexed\nComparing S3 and S4 on an example\nS4\nR6\nS7"
+  },
+  {
+    "objectID": "week9/index.html",
+    "href": "week9/index.html",
+    "title": "Week 9: Object-oriented programming (vctrs)",
+    "section": "",
+    "text": "Week 9\n\nExtend object-oriented programming with vctrs-based classes and a stronger type system.\n\n\n\n\nPrepare before class\n\nReview the vctrs documentation and the related Advanced R material before class.\n\n\n\nWorkshop\n\nThursday 07 May · 9:00am to 11:00am · LTB Room 121\n\n\n\nFocus\n\n\nThe vctrs type system\n\n\nDesigning custom vector classes\n\n\nCoercion and casting\n\n\nConnecting vctrs ideas back to S3\n\n\n\n\nAssessment\n\nAssignment 2 is due Tuesday 05 May\n\n\n\n\nSlides PDFvctrs documentationRecordings"
+  },
+  {
+    "objectID": "week9/index.html#main-references",
+    "href": "week9/index.html#main-references",
+    "title": "Week 9: Object-oriented programming (vctrs)",
+    "section": "Main references",
+    "text": "Main references\n\n13 Advanced R\nvctrs"
+  },
+  {
+    "objectID": "week9/index.html#what-you-will-learn-this-week",
+    "href": "week9/index.html#what-you-will-learn-this-week",
+    "title": "Week 9: Object-oriented programming (vctrs)",
+    "section": "What you will learn this week",
+    "text": "What you will learn this week"
+  },
+  {
+    "objectID": "week9/index.html#slides-for-week",
+    "href": "week9/index.html#slides-for-week",
+    "title": "Week 9: Object-oriented programming (vctrs)",
+    "section": "Slides for week",
+    "text": "Slides for week\n\n\n\nDownload slides PDF"
+  },
+  {
+    "objectID": "week9/index.html#assignments",
+    "href": "week9/index.html#assignments",
+    "title": "Week 9: Object-oriented programming (vctrs)",
+    "section": "Assignments",
+    "text": "Assignments\n\nAssignment 2 is due on Tuesday 05 May."
+  },
+  {
+    "objectID": "assignments/A1_rubric_detailed.html",
+    "href": "assignments/A1_rubric_detailed.html",
+    "title": "Assignment 1 Marking Rubric",
+    "section": "",
+    "text": "Total: 100 marks (scaled to 30% of unit grade) Group Project: R Package Development – Rock, Paper, Scissors\n\n\n\nExcellent (17–20) - All requirements satisfied. - Correct logic for win/lose/draw across multiple rounds. - All strategies implemented correctly, including at least one stateful strategy. - Fully robust to edge cases; input/output exactly matches specification.\nGood (13–16) - Gameplay correct for typical inputs; minor inconsistencies. - Strategies implemented but one may be incomplete.\nSatisfactory (9–12) - Basic gameplay works but fails for some edge or mixed cases. - Limited strategy robustness.\nPoor (1–8) - Incorrect outcomes or broken logic. - Strategies malfunction or missing.\nNot attempted (0) - No meaningful implementation.\n\n\n\n\nExcellent (17–20) - Clean, modular, readable code with appropriate helper functions. - Good separation of concerns. - Efficient vectorisation where appropriate. - Sensible data structures. - No seed-setting in package code; randomness handled properly.\nGood (13–16) - Mostly modular; occasional duplication. - Some vectorisation.\nSatisfactory (9–12) - Limited modularity; large blocks of logic embedded in one place. - Overuse of loops where vectorisation is feasible.\nPoor (1–8) - Monolithic, unstructured, or hard-to-follow code.\nNot attempted (0) - No coherent code submitted.\n\n\n\n\nExcellent (13–15) - play_rps() clearly documented with running examples. - README well-written and explains installation and usage. - Examples run without errors.\nGood (10–12) - Documentation mostly clear; minor missing details.\nSatisfactory (7–9) - Documentation incomplete, unclear, or inaccurate.\nPoor (1–6) - Minimal documentation; examples missing or broken.\nNot attempted (0) - No documentation provided.\n\n\n\n\nExcellent (13–15) - Comprehensive test coverage for gameplay logic, strategies, and edge cases. - Tests deterministic via setting seeds in tests only. - Clear organisation.\nGood (10–12) - Several important behaviours tested; moderate coverage.\nSatisfactory (7–9) - Limited or superficial tests; some randomness issues.\nPoor (1–6) - Very little testing; major logic untested.\nNot attempted (0) - No tests.\n\n\n\n\nExcellent (9–10) - Package builds and installs without error or significant warnings. - Passes R CMD check with zero errors and warnings - Proper structure, DESCRIPTION, and NAMESPACE.\nGood (7–8) - Minor notes or warnings.\nSatisfactory (5–6) - Noticeable structural issues; multiple notes/warnings.\nPoor (1–4) - Package fails check or builds incorrectly.\nNot attempted (0) - Package does not build.\n\n\n\n\nExcellent (9–10) - Regular, meaningful commits from all members. - Clear, accurate commit messages. - Evidence of collaboration.\nGood (7–8) - Mostly regular commits; messages acceptable.\nSatisfactory (5–6) - Irregular commits; vague or mixed-quality messages.\nPoor (1–4) - Sparse commits; poor documentation of work.\nNot attempted (0) - No meaningful commit history.\n(Individual commit‑based penalties applied separately as per assignment instructions.)\n\n\n\n\nFull marks (5) - Clear, honest explanation of AI use, including prompts/examples. - No evidence of unacknowledged use.\nPartial (2–4) - Statement present but incomplete or unclear.\nZero (0) - No statement OR unacknowledged AI use detected."
+  },
+  {
+    "objectID": "assignments/A1_rubric_detailed.html#functionality-of-play_rps-20-marks",
+    "href": "assignments/A1_rubric_detailed.html#functionality-of-play_rps-20-marks",
+    "title": "Assignment 1 Marking Rubric",
+    "section": "",
+    "text": "Excellent (17–20) - All requirements satisfied. - Correct logic for win/lose/draw across multiple rounds. - All strategies implemented correctly, including at least one stateful strategy. - Fully robust to edge cases; input/output exactly matches specification.\nGood (13–16) - Gameplay correct for typical inputs; minor inconsistencies. - Strategies implemented but one may be incomplete.\nSatisfactory (9–12) - Basic gameplay works but fails for some edge or mixed cases. - Limited strategy robustness.\nPoor (1–8) - Incorrect outcomes or broken logic. - Strategies malfunction or missing.\nNot attempted (0) - No meaningful implementation."
+  },
+  {
+    "objectID": "assignments/A1_rubric_detailed.html#code-quality-and-design-20-marks",
+    "href": "assignments/A1_rubric_detailed.html#code-quality-and-design-20-marks",
+    "title": "Assignment 1 Marking Rubric",
+    "section": "",
+    "text": "Excellent (17–20) - Clean, modular, readable code with appropriate helper functions. - Good separation of concerns. - Efficient vectorisation where appropriate. - Sensible data structures. - No seed-setting in package code; randomness handled properly.\nGood (13–16) - Mostly modular; occasional duplication. - Some vectorisation.\nSatisfactory (9–12) - Limited modularity; large blocks of logic embedded in one place. - Overuse of loops where vectorisation is feasible.\nPoor (1–8) - Monolithic, unstructured, or hard-to-follow code.\nNot attempted (0) - No coherent code submitted."
+  },
+  {
+    "objectID": "assignments/A1_rubric_detailed.html#documentation-roxygen2-readme-15-marks",
+    "href": "assignments/A1_rubric_detailed.html#documentation-roxygen2-readme-15-marks",
+    "title": "Assignment 1 Marking Rubric",
+    "section": "",
+    "text": "Excellent (13–15) - play_rps() clearly documented with running examples. - README well-written and explains installation and usage. - Examples run without errors.\nGood (10–12) - Documentation mostly clear; minor missing details.\nSatisfactory (7–9) - Documentation incomplete, unclear, or inaccurate.\nPoor (1–6) - Minimal documentation; examples missing or broken.\nNot attempted (0) - No documentation provided."
+  },
+  {
+    "objectID": "assignments/A1_rubric_detailed.html#unit-testing-15-marks",
+    "href": "assignments/A1_rubric_detailed.html#unit-testing-15-marks",
+    "title": "Assignment 1 Marking Rubric",
+    "section": "",
+    "text": "Excellent (13–15) - Comprehensive test coverage for gameplay logic, strategies, and edge cases. - Tests deterministic via setting seeds in tests only. - Clear organisation.\nGood (10–12) - Several important behaviours tested; moderate coverage.\nSatisfactory (7–9) - Limited or superficial tests; some randomness issues.\nPoor (1–6) - Very little testing; major logic untested.\nNot attempted (0) - No tests."
+  },
+  {
+    "objectID": "assignments/A1_rubric_detailed.html#package-structure-and-build-quality-10-marks",
+    "href": "assignments/A1_rubric_detailed.html#package-structure-and-build-quality-10-marks",
+    "title": "Assignment 1 Marking Rubric",
+    "section": "",
+    "text": "Excellent (9–10) - Package builds and installs without error or significant warnings. - Passes R CMD check with zero errors and warnings - Proper structure, DESCRIPTION, and NAMESPACE.\nGood (7–8) - Minor notes or warnings.\nSatisfactory (5–6) - Noticeable structural issues; multiple notes/warnings.\nPoor (1–4) - Package fails check or builds incorrectly.\nNot attempted (0) - Package does not build."
+  },
+  {
+    "objectID": "assignments/A1_rubric_detailed.html#github-usage-and-commit-practices-10-marks",
+    "href": "assignments/A1_rubric_detailed.html#github-usage-and-commit-practices-10-marks",
+    "title": "Assignment 1 Marking Rubric",
+    "section": "",
+    "text": "Excellent (9–10) - Regular, meaningful commits from all members. - Clear, accurate commit messages. - Evidence of collaboration.\nGood (7–8) - Mostly regular commits; messages acceptable.\nSatisfactory (5–6) - Irregular commits; vague or mixed-quality messages.\nPoor (1–4) - Sparse commits; poor documentation of work.\nNot attempted (0) - No meaningful commit history.\n(Individual commit‑based penalties applied separately as per assignment instructions.)"
+  },
+  {
+    "objectID": "assignments/A1_rubric_detailed.html#ai-use-statement-5-marks",
+    "href": "assignments/A1_rubric_detailed.html#ai-use-statement-5-marks",
+    "title": "Assignment 1 Marking Rubric",
+    "section": "",
+    "text": "Full marks (5) - Clear, honest explanation of AI use, including prompts/examples. - No evidence of unacknowledged use.\nPartial (2–4) - Statement present but incomplete or unclear.\nZero (0) - No statement OR unacknowledged AI use detected."
+  }
+]

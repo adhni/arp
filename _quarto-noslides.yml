@@ -1,6 +1,0 @@
-project:
-  render:
-    - "*.qmd"
-    - "*.md"
-    - "!long-map.qmd"
-    - "!week*/slides.qmd"
