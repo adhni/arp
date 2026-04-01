@@ -1,8 +1,6 @@
 project:
   type: website
   output-dir: docs
-  resources:
-    - "CNAME"
   render:
   - "*.qmd"
   - "*.md"
@@ -10,7 +8,7 @@ project:
 
 website:
   title: "Advanced R Programming"
-  site-url: "https://arp.numbat.space"
+  site-url: "https://adhni.github.io/arp/"
   navbar:
     background: "#0f4c81"
     left:
@@ -50,7 +48,7 @@ website:
         href: "https://learning.monash.edu/mod/lti/view.php?id=5219874"
     right:
       - icon: github
-        href: https://github.com/numbats/arp
+        href: https://github.com/adhni/arp
 
 date-format: "D MMMM YYYY"
 
