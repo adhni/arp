@@ -1,10 +1,24 @@
 ---
 title: "Week 8: Object-oriented programming"
+summary: "Learn object-oriented programming concepts in R with a focus on S3 design and methods."
+prepare: "Read the S3 chapter and skim the comparison resources if you need a broader OO refresher."
+resource_label: "Advanced R S3"
+resource_url: "https://adv-r.hadley.nz/s3.html"
+focus:
+  - "S3 classes and methods"
+  - "Object-oriented programming concepts in R"
+  - "How S3 compares with other OO systems"
+  - "Useful references for S4, R6, and S7"
 ---
 
 ```{r}
 week <- 8
 source(here::here("course_info.R"))
+```
+
+```{r}
+#| output: asis
+show_week_overview(week)
 ```
 
 ## Main reference

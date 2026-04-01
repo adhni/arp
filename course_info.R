@@ -1,6 +1,10 @@
 ######## Course info ########
 library(dplyr)
 
+`%||%` <- function(x, y) {
+  if (is.null(x)) y else x
+}
+
 # Start of semester
 start_semester <- "2026-03-02"
 
@@ -68,25 +72,67 @@ assignments <- readr::read_csv(here::here("assignments.csv")) |>
 schedule <- schedule |>
   full_join(assignments, by = "Date")
 
-week_details <- tibble::tribble(
-  ~Week, ~Summary, ~Prepare, ~ResourceLabel, ~ResourceUrl,
-  1L, "Get your tooling in place and build a foundation in R data structures and everyday workflow.", "Install Positron, take the quick tour, and watch the intro videos before the workshop.", "Advanced R foundations", "https://adv-r.hadley.nz/foundations-intro.html",
-  2L, "Work through subsetting, control flow, functions, environments, and conditions in base R.", "Watch the subsetting videos and finish the `linear()` warm-up exercise before class.", "Advanced R foundations", "https://adv-r.hadley.nz/foundations-intro.html",
-  3L, "Learn the package-development workflow: metadata, documentation, checks, tests, and CI.", "Watch the package-building video and come ready to work inside an R package project.", "R Packages", "https://r-pkgs.org",
-  4L, "Use LLM tooling productively for R programming inside Positron and with the ellmer package.", "Review the Positron AI videos and the ellmer documentation before the session.", "ellmer documentation", "https://ellmer.tidyverse.org/",
-  5L, "Practice debugging workflows in R, including reprexes, traceback, browser, errors, and warnings.", "Watch the debugging videos and skim the online support resources before class.", "Advanced R debugging", "https://adv-r.hadley.nz/debugging.html",
-  6L, "Use functional programming patterns, function arguments, and function factories to write cleaner code.", "Read the functional programming chapter and arrive ready to discuss reusable function design.", "Advanced R functional programming", "https://adv-r.hadley.nz/fp.html",
-  7L, "Measure performance, profile bottlenecks, and improve the speed of R code where it matters.", "Read the Efficient R material and come with questions about profiling and optimisation.", "Efficient R", "https://csgillespie.github.io/efficientR/",
-  8L, "Learn object-oriented programming concepts in R with a focus on S3 design and methods.", "Read the S3 chapter and skim the comparison resources if you need a broader OO refresher.", "Advanced R S3", "https://adv-r.hadley.nz/s3.html",
-  9L, "Extend object-oriented programming with vctrs-based classes and a stronger type system.", "Review the vctrs documentation and the related Advanced R material before class.", "vctrs documentation", "https://vctrs.r-lib.org",
-  10L, "Work with non-standard evaluation, abstract syntax trees, tidyselect, and code generation safely.", "Read the metaprogramming chapters in Advanced R before the workshop.", "Advanced R metaprogramming", "https://adv-r.hadley.nz/metaprogramming.html",
-  11L, "Rewrite performance-critical code in C++ using Rcpp and related tooling.", "Make sure your compiler toolchain is installed before class so you can complete the exercises.", "Rcpp FAQ", "https://cran.r-project.org/package=Rcpp/vignettes/Rcpp-FAQ.pdf",
-  12L, "Use the hackathon week to finish, polish, and troubleshoot your final package work in teams.", "Bring your package backlog, open issues, and final integration tasks to the workshop.", "Assignment 3", "./assignments/A3.html"
-)
+read_qmd_front_matter <- function(path) {
+  lines <- readLines(path, warn = FALSE, encoding = "UTF-8")
+  if (length(lines) < 3 || lines[[1]] != "---") {
+    return(list())
+  }
+
+  end <- which(lines[-1] == "---")[1] + 1
+  if (is.na(end) || end <= 2) {
+    return(list())
+  }
+
+  yaml::yaml.load(
+    paste(lines[2:(end - 1)], collapse = "\n"),
+    eval.expr = FALSE
+  )
+}
+
+week_metadata <- purrr::map_dfr(1:12, function(week) {
+  meta <- read_qmd_front_matter(
+    here::here(paste0("week", week, "/index.qmd"))
+  )
+
+  tibble::tibble(
+    Week = week,
+    Title = meta$title %||% paste("Week", week),
+    Summary = meta$summary %||% "",
+    Prepare = meta$prepare %||% "",
+    ResourceLabel = meta$resource_label %||% "Week page",
+    ResourceUrl = meta$resource_url %||% paste0("week", week, "/index.html"),
+    Focus = list(unlist(meta$focus %||% character()))
+  )
+})
 
 course_weeks <- schedule |>
   filter(!is.na(Date), !is.na(Topic)) |>
   arrange(Date)
+
+site_path <- function(path, depth = 0) {
+  if (is.null(path) || identical(path, "") || is.na(path)) {
+    return(NULL)
+  }
+
+  if (grepl("^(https?:)?//", path)) {
+    return(path)
+  }
+
+  prefix <- if (depth > 0) paste(rep("../", depth), collapse = "") else "./"
+  paste0(prefix, path)
+}
+
+render_focus_list <- function(items, class_name = "focus-list") {
+  if (length(items) == 0) {
+    return("<p class='muted'>No focus items listed yet.</p>")
+  }
+
+  paste0(
+    "<ul class='", class_name, "'>",
+    paste0("<li>", items, "</li>", collapse = ""),
+    "</ul>"
+  )
+}
 
 get_current_week_context <- function(reference_date = Sys.Date()) {
   today <- as.Date(reference_date)
@@ -119,7 +165,7 @@ get_current_week_context <- function(reference_date = Sys.Date()) {
 
   details <- tibble::tibble()
   if (!is.na(current$Week)) {
-    details <- week_details |>
+    details <- week_metadata |>
       filter(Week == current$Week)
   }
 
@@ -209,21 +255,32 @@ show_week_dashboard <- function(reference_date = Sys.Date()) {
   }
 
   week_page <- if (is_break) {
-    if (NROW(next_week) > 0) paste0("./week", next_week$Week, "/index.html") else "./index.html"
+    if (NROW(next_week) > 0) site_path(paste0("week", next_week$Week, "/index.html")) else "./index.html"
   } else {
-    paste0("./week", current$Week, "/index.html")
+    site_path(paste0("week", current$Week, "/index.html"))
   }
 
   week_page_label <- if (is_break) "Preview next teaching week" else "Open week page"
 
   slides_url <- if (!is_break && fs::file_exists(here::here(paste0("docs/week", current$Week, "/slides.pdf")))) {
-    paste0("./week", current$Week, "/slides.pdf")
+    site_path(paste0("week", current$Week, "/slides.pdf"))
   } else {
     NULL
   }
 
-  resource_url <- if (!is_break) details$ResourceUrl[[1]] else if (NROW(next_assignment) > 0) next_assignment$File[[1]] else "./index.html"
+  resource_url <- if (!is_break) {
+    site_path(details$ResourceUrl[[1]])
+  } else if (NROW(next_assignment) > 0) {
+    site_path(next_assignment$File[[1]])
+  } else {
+    "./index.html"
+  }
   resource_label <- if (!is_break) details$ResourceLabel[[1]] else "Next assessment"
+  focus_html <- if (is_break) {
+    paste0("<p>", next_up, "</p>")
+  } else {
+    render_focus_list(details$Focus[[1]], "week-dashboard__focus-list")
+  }
 
   html <- c(
     "<div class='week-dashboard'>",
@@ -242,18 +299,84 @@ show_week_dashboard <- function(reference_date = Sys.Date()) {
     paste0("<p>", workshop, "</p>"),
     "</div>",
     "<div class='week-dashboard__card'>",
+    if (is_break) "<span class='week-dashboard__label'>After the break</span>" else "<span class='week-dashboard__label'>Key focus</span>",
+    focus_html,
+    "</div>",
+    "<div class='week-dashboard__card'>",
     "<span class='week-dashboard__label'>Assessment</span>",
     paste0("<p>", assessment_text, "</p>"),
     "</div>",
-    "<div class='week-dashboard__card'>",
-    "<span class='week-dashboard__label'>Coming up next</span>",
-    paste0("<p>", next_up, "</p>"),
     "</div>",
-    "</div>",
+    if (!is_break) paste0("<p class='week-dashboard__next'>Coming up next: ", next_up, "</p>"),
     "<div class='week-dashboard__actions'>",
     paste0("<a class='button-link' href='", week_page, "'>", week_page_label, "</a>"),
     if (!is.null(slides_url)) paste0("<a class='button-link button-link--ghost' href='", slides_url, "'>Slides PDF</a>"),
     paste0("<a class='button-link button-link--ghost' href='", resource_url, "'>", resource_label, "</a>"),
+    "<a class='button-link button-link--ghost' href='https://learning.monash.edu/mod/lti/view.php?id=5219874'>Recordings</a>",
+    "</div>",
+    "</div>"
+  )
+
+  cat(paste(html, collapse = ""))
+}
+
+show_week_overview <- function(week, depth = 1) {
+  details <- week_metadata |>
+    filter(Week == week)
+
+  this_week <- course_weeks |>
+    filter(Week == week) |>
+    slice_head(n = 1)
+
+  due_this_week <- assignments |>
+    filter(Due >= this_week$Date, Due < this_week$Date + 7) |>
+    arrange(Due)
+
+  assessment_text <- if (NROW(due_this_week) > 0) {
+    paste0(
+      due_this_week$Assignment[[1]],
+      " is due ",
+      format(due_this_week$Due[[1]], "%A %d %B")
+    )
+  } else {
+    "No assessment deadline falls inside this teaching week."
+  }
+
+  slides_url <- if (fs::file_exists(here::here(paste0("docs/week", week, "/slides.pdf")))) {
+    site_path(paste0("week", week, "/slides.pdf"), depth)
+  } else {
+    NULL
+  }
+
+  resource_url <- site_path(details$ResourceUrl[[1]], depth)
+
+  html <- c(
+    "<div class='week-overview'>",
+    "<div class='week-overview__header'>",
+    paste0("<span class='week-overview__status'>Week ", week, "</span>"),
+    paste0("<p>", details$Summary[[1]], "</p>"),
+    "</div>",
+    "<div class='week-overview__grid'>",
+    "<div class='week-overview__card'>",
+    "<span class='week-overview__label'>Prepare before class</span>",
+    paste0("<p>", details$Prepare[[1]], "</p>"),
+    "</div>",
+    "<div class='week-overview__card'>",
+    "<span class='week-overview__label'>Workshop</span>",
+    paste0("<p>", format(this_week$Date + 3, "%A %d %B"), " · 9:00am to 11:00am · LTB Room 121</p>"),
+    "</div>",
+    "<div class='week-overview__card'>",
+    "<span class='week-overview__label'>Focus</span>",
+    render_focus_list(details$Focus[[1]], "week-overview__focus-list"),
+    "</div>",
+    "<div class='week-overview__card'>",
+    "<span class='week-overview__label'>Assessment</span>",
+    paste0("<p>", assessment_text, "</p>"),
+    "</div>",
+    "</div>",
+    "<div class='week-overview__actions'>",
+    if (!is.null(slides_url)) paste0("<a class='button-link' href='", slides_url, "'>Slides PDF</a>"),
+    paste0("<a class='button-link button-link--ghost' href='", resource_url, "'>", details$ResourceLabel[[1]], "</a>"),
     "<a class='button-link button-link--ghost' href='https://learning.monash.edu/mod/lti/view.php?id=5219874'>Recordings</a>",
     "</div>",
     "</div>"

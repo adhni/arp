@@ -1,10 +1,24 @@
 ---
 title: "Week 1: R tools and data structures"
+summary: "Get your tooling in place and build a foundation in R data structures and everyday workflow."
+prepare: "Install Positron, take the quick tour, and watch the intro videos before the workshop."
+resource_label: "Advanced R foundations"
+resource_url: "https://adv-r.hadley.nz/foundations-intro.html"
+focus:
+  - "What makes R different from other programming languages"
+  - "Differences between RStudio and Positron"
+  - "GitHub, AI tools, and package sources in modern R workflows"
+  - "Scalars, vectors, lists, and data frames"
 ---
 
 ```{r}
 week <- 1
 source(here::here("course_info.R"))
+```
+
+```{r}
+#| output: asis
+show_week_overview(week)
 ```
 
 ## Main reference

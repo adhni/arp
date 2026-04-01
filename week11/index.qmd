@@ -1,5 +1,14 @@
 ---
 title: "Week 11: Rewriting R code in C++"
+summary: "Rewrite performance-critical code in C++ using Rcpp and related tooling."
+prepare: "Make sure your compiler toolchain is installed before class so you can complete the exercises."
+resource_label: "Rcpp FAQ"
+resource_url: "https://cran.r-project.org/package=Rcpp/vignettes/Rcpp-FAQ.pdf"
+focus:
+  - "Rcpp for integrating C++ with R"
+  - "Compiled code inside packages"
+  - "Hands-on coding exercises"
+  - "Working with RcppArmadillo"
 ---
 
 Guest Lecturer: [Tomasz Wozniak](https://github.com/donotdespair)
@@ -7,6 +16,11 @@ Guest Lecturer: [Tomasz Wozniak](https://github.com/donotdespair)
 ```{r}
 week <- 11
 source(here::here("course_info.R"))
+```
+
+```{r}
+#| output: asis
+show_week_overview(week)
 ```
 
 ## Main reference

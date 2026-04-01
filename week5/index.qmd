@@ -1,10 +1,24 @@
 ---
 title: "Week 5: Debugging"
+summary: "Practice debugging workflows in R, including reprexes, traceback, browser, errors, and warnings."
+prepare: "Watch the debugging videos and skim the online support resources before class."
+resource_label: "Advanced R debugging"
+resource_url: "https://adv-r.hadley.nz/debugging.html"
+focus:
+  - "Creating good reprexes for debugging"
+  - "Using traceback, browser, and debug tools"
+  - "Diagnosing errors and warnings"
+  - "Working through class debugging exercises"
 ---
 
 ```{r}
 week <- 5
 source(here::here("course_info.R"))
+```
+
+```{r}
+#| output: asis
+show_week_overview(week)
 ```
 
 

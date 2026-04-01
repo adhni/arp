@@ -1,10 +1,24 @@
 ---
 title: "Week 9: Object-oriented programming (vctrs)"
+summary: "Extend object-oriented programming with vctrs-based classes and a stronger type system."
+prepare: "Review the vctrs documentation and the related Advanced R material before class."
+resource_label: "vctrs documentation"
+resource_url: "https://vctrs.r-lib.org"
+focus:
+  - "The vctrs type system"
+  - "Designing custom vector classes"
+  - "Coercion and casting"
+  - "Connecting vctrs ideas back to S3"
 ---
 
 ```{r}
 week <- 9
 source(here::here("course_info.R"))
+```
+
+```{r}
+#| output: asis
+show_week_overview(week)
 ```
 
 ## Main references

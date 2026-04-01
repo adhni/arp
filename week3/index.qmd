@@ -1,10 +1,24 @@
 ---
 title: "Week 3: R package development"
+summary: "Learn the package-development workflow: metadata, documentation, checks, tests, and CI."
+prepare: "Watch the package-building video and come ready to work inside an R package project."
+resource_label: "R Packages"
+resource_url: "https://r-pkgs.org"
+focus:
+  - "Package metadata and structure"
+  - "Documentation and testing"
+  - "Package checks and websites"
+  - "Continuous integration with GitHub Actions"
 ---
 
 ```{r}
 week <- 3
 source(here::here("course_info.R"))
+```
+
+```{r}
+#| output: asis
+show_week_overview(week)
 ```
 
 ## Main reference

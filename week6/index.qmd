@@ -1,10 +1,24 @@
 ---
 title: "Week 6: Functional programming"
+summary: "Use functional programming patterns, function arguments, and function factories to write cleaner code."
+prepare: "Read the functional programming chapter and arrive ready to discuss reusable function design."
+resource_label: "Advanced R functional programming"
+resource_url: "https://adv-r.hadley.nz/fp.html"
+focus:
+  - "Functions as values"
+  - "Function arguments and closures"
+  - "Function factories"
+  - "Writing reusable, composable code"
 ---
 
 ```{r}
 week <- 6
 source(here::here("course_info.R"))
+```
+
+```{r}
+#| output: asis
+show_week_overview(week)
 ```
 
 ## Main reference

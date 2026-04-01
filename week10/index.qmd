@@ -1,10 +1,24 @@
 ---
 title: "Week 10: Metaprogramming"
+summary: "Work with non-standard evaluation, abstract syntax trees, tidyselect, and code generation safely."
+prepare: "Read the metaprogramming chapters in Advanced R before the workshop."
+resource_label: "Advanced R metaprogramming"
+resource_url: "https://adv-r.hadley.nz/metaprogramming.html"
+focus:
+  - "Non-standard evaluation"
+  - "Abstract syntax trees and expressions"
+  - "Symbols, calls, and quosures"
+  - "Parsing, evaluation, and code safety"
 ---
 
 ```{r}
 week <- 10
 source(here::here("course_info.R"))
+```
+
+```{r}
+#| output: asis
+show_week_overview(week)
 ```
 
 ## Main reference

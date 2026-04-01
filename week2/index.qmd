@@ -1,10 +1,24 @@
 ---
 title: "Week 2: Foundations of R Programming"
+summary: "Work through subsetting, control flow, functions, environments, and conditions in base R."
+prepare: "Watch the subsetting videos and finish the `linear()` warm-up exercise before class."
+resource_label: "Advanced R foundations"
+resource_url: "https://adv-r.hadley.nz/foundations-intro.html"
+focus:
+  - "Subsetting vectors, lists, and matrices"
+  - "Control flow and function writing"
+  - "Environments and conditions"
+  - "Writing functions with sensible defaults and errors"
 ---
 
 ```{r}
 week <- 2
 source(here::here("course_info.R"))
+```
+
+```{r}
+#| output: asis
+show_week_overview(week)
 ```
 
 ## Main reference

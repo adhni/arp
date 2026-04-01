@@ -182,6 +182,22 @@ main.content > section.level2 > h2 {
   line-height: 1.65;
 }
 
+.week-dashboard__focus-list {
+  margin: 0;
+  padding-left: 1rem;
+  color: #fff;
+}
+
+.week-dashboard__focus-list li + li {
+  margin-top: 0.35rem;
+}
+
+.week-dashboard__next {
+  margin: 1rem 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.95rem;
+}
+
 .week-dashboard__actions {
   display: flex;
   flex-wrap: wrap;
@@ -209,6 +225,82 @@ main.content > section.level2 > h2 {
 .week-dashboard .button-link--ghost:hover {
   background: rgba(255, 255, 255, 0.18);
   color: #fff;
+}
+
+.week-overview {
+  margin: 0 0 1.5rem;
+  padding: 1.4rem 1.45rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(180deg, rgba(239, 245, 252, 0.95) 0%, #ffffff 100%);
+  border: 1px solid rgba(15, 76, 129, 0.12);
+  box-shadow: 0 14px 30px rgba(16, 40, 61, 0.08);
+}
+
+.week-overview__header p {
+  margin: 0.4rem 0 0;
+  color: #35526c;
+  font-size: 1.03rem;
+  line-height: 1.7;
+}
+
+.week-overview__status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.34rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(15, 76, 129, 0.1);
+  color: #0f4c81;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.week-overview__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.week-overview__card {
+  padding: 1rem 1.05rem;
+  border-radius: 1.15rem;
+  background: rgba(15, 76, 129, 0.04);
+  border: 1px solid rgba(15, 76, 129, 0.08);
+}
+
+.week-overview__label {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  color: #0f4c81;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.week-overview__card p {
+  margin: 0;
+  color: #18324a;
+  line-height: 1.6;
+}
+
+.week-overview__focus-list {
+  margin: 0;
+  padding-left: 1rem;
+  color: #18324a;
+}
+
+.week-overview__focus-list li + li {
+  margin-top: 0.35rem;
+}
+
+.week-overview__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
 }
 
 .action-grid,
@@ -514,6 +606,10 @@ main.content li + li {
   }
 
   .week-dashboard__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .week-overview__grid {
     grid-template-columns: 1fr;
   }
 
