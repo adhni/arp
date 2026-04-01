@@ -203,6 +203,13 @@
     "text": "R is widely used as a tool for data analysis and one of the most popular programming languages. This unit delves into R from the programming aspect instead of using it as a data analysis tool. You will learn a variety of programming paradigms and delve into the foundations of R as a programming language."
   },
   {
+    "objectID": "index.html#this-week",
+    "href": "index.html#this-week",
+    "title": "ETC4500/5450 Advanced R Programming",
+    "section": "This week",
+    "text": "This week\n\n\nThis week\n\nWeek 5 · Debugging\n\n\nPractice debugging workflows in R, including reprexes, traceback, browser, errors, and warnings.\n\n\n\n\nPrepare before class\n\nWatch the debugging videos and skim the online support resources before class.\n\n\n\nWorkshop\n\nThursday 02 April · 9:00am to 11:00am · LTB Room 121\n\n\n\nAssessment\n\nThis week’s deadline: Assignment 1 was due Tuesday 31 March\n\n\n\nComing up next\n\nWeek 6 starts 16 Apr: Functional programming\n\n\n\n\nOpen week pageAdvanced R debuggingRecordings\n\n\n\n Start here Moodle Lecture material, submissions, announcements, and unit administration.   Watch Recordings Pre-class videos and workshop recordings in one place.   Ask questions Discussion Course discussion, clarifications, and workshop support on Ed.   Plan ahead Weekly schedule Topics, week pages, and upcoming assessment milestones."
+  },
+  {
     "objectID": "index.html#course-at-a-glance",
     "href": "index.html#course-at-a-glance",
     "title": "ETC4500/5450 Advanced R Programming",
@@ -480,14 +487,14 @@
     "href": "week6/index.html#slides-for-week",
     "title": "Week 6: Functional programming",
     "section": "Slides for week",
-    "text": "Slides for week\n\n\nDownload pdf"
+    "text": "Slides for week\n\n\n\nDownload slides PDF"
   },
   {
     "objectID": "week6/index.html#assignments",
     "href": "week6/index.html#assignments",
     "title": "Week 6: Functional programming",
     "section": "Assignments",
-    "text": "Assignments\n\nAssignment 1 is due on Tuesday 31 March."
+    "text": "Assignments\n\nAssignment 2 is due on Tuesday 05 May."
   },
   {
     "objectID": "week8/index.html",

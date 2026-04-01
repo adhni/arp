@@ -8,6 +8,26 @@ execute:
 
 R is widely used as a tool for data analysis and one of the most popular programming languages. This unit delves into R from the programming aspect instead of using it as a data analysis tool. You will learn a variety of programming paradigms and delve into the foundations of R as a programming language.
 
+```{r}
+#| label: load_packages
+#| include: false
+#| message: false
+#| warning: false
+#| echo: false
+#| cache: false
+library(tidyverse)
+options(knitr.kable.NA = '')
+source(here::here("course_info.R"))
+```
+
+## This week
+
+```{r}
+#| output: asis
+#| cache: false
+show_week_dashboard()
+```
+
 ::: {.action-grid}
 <a class="action-card" href="https://learning.monash.edu/course/view.php?id=40292&section=1">
   <span class="action-card__kicker">Start here</span>
@@ -99,18 +119,6 @@ R is widely used as a tool for data analysis and one of the most popular program
   </ul>
 </div>
 :::
-
-```{r}
-#| label: load_packages
-#| include: false
-#| message: false
-#| warning: false
-#| echo: false
-#| cache: false
-library(tidyverse)
-options(knitr.kable.NA = '')
-source(here::here("course_info.R"))
-```
 
 ## Weekly schedule
 

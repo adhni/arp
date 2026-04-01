@@ -107,6 +107,110 @@ main.content > section.level2 > h2 {
   color: #10283d;
 }
 
+.week-dashboard {
+  margin: 1.4rem 0 1.8rem;
+  padding: 1.7rem;
+  border-radius: 1.8rem;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.18), transparent 16rem),
+    linear-gradient(135deg, #0d3f67 0%, #0f4c81 60%, #1f6ca4 100%);
+  color: #fff;
+  box-shadow: 0 22px 42px rgba(13, 48, 79, 0.18);
+}
+
+.week-dashboard__header h2 {
+  margin: 0.35rem 0 0.55rem;
+  color: #fff;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.week-dashboard__header > p {
+  margin: 0;
+  max-width: 46rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.week-dashboard__status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.36rem 0.72rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.week-dashboard__status--break {
+  background: rgba(255, 213, 125, 0.24);
+  color: #fff7df;
+}
+
+.week-dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.3rem;
+}
+
+.week-dashboard__card {
+  padding: 1.05rem 1.1rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6px);
+}
+
+.week-dashboard__label {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.week-dashboard__card p {
+  margin: 0;
+  color: #fff;
+  line-height: 1.65;
+}
+
+.week-dashboard__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.3rem;
+}
+
+.week-dashboard .button-link {
+  background: #fff;
+  color: #0d3f67;
+  box-shadow: none;
+}
+
+.week-dashboard .button-link:hover {
+  background: #edf5ff;
+  color: #0d3f67;
+}
+
+.week-dashboard .button-link--ghost {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.week-dashboard .button-link--ghost:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
 .action-grid,
 .metric-grid,
 .outcome-grid,
@@ -409,6 +513,10 @@ main.content li + li {
     grid-template-columns: 1fr;
   }
 
+  .week-dashboard__grid {
+    grid-template-columns: 1fr;
+  }
+
   .slides-frame {
     min-height: 24rem;
   }
@@ -422,6 +530,11 @@ main.content li + li {
 @media (max-width: 640px) {
   main.content > p:first-of-type {
     font-size: 1.02rem;
+  }
+
+  .week-dashboard {
+    padding: 1.3rem;
+    border-radius: 1.4rem;
   }
 
   .table tbody td,
